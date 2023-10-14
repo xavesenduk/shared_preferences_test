@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 );
               },
-              // Remove token is fairly equal to log-in
+              // TODO: Write token is fairly equal to log-in. This will be handled by SSO
               child: const Text('Write Token'),
             ),
           ],
@@ -116,6 +116,7 @@ class _MyTokenPageState extends State<MyTokenPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            // TODO: App must read token to assert user is logged in
             Text(accessToken),
             TextButton(
               onPressed: () {
@@ -129,7 +130,7 @@ class _MyTokenPageState extends State<MyTokenPage> {
                   ),
                 );
               },
-              // Remove token is fairly equal to log-out
+              // TODO: Remove token is fairly equal to log-out
               child: const Text('Remove Token'),
             ),
           ],
